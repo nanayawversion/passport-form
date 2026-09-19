@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Passport Application Form</title>
+  <!-- This links your external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Paste HTML markup here -->
+   <div class="form-card">
+  
+  <!-- Header Banner -->
+  <header class="header-banner">
+    <div class="header-flex">
+      <div class="header-branding">
+        <!-- Logo Container -->
+        <div class="logo-box">
+          <span class="logo-text">Naya<span class="logo-text-accent">Net</span></span>
+          <span class="logo-subtext">STAY CONNECTED</span>
+        </div>
+        <div>
+          <h1 class="header-title">Passport Application Form</h1>
+          <p class="header-subtitle">CLIENT REGISTRATION & INTAKE DOSSIER</p>
+        </div>
+      </div>
+      <div class="header-meta">
+        <p>Application Ref: <span class="meta-value">NN-PASS-2026</span></p>
+        <p>Date: <span class="meta-value">____ / ____ / 20___</span></p>
+      </div>
+    </div>
+  </header>
+
+  <form class="form-body">
+
+    <!-- 1. Service Details -->
+    <section class="form-section">
+      <div class="section-title">
+        <div class="title-accent"></div>
+        <h2>1. Application & Service Type</h2>
+      </div>
+      <div class="section-box grid-3">
+        <div class="field-group">
+          <label class="field-label">Service Level</label>
+          <div class="radio-group">
+            <label class="radio-label"><input type="radio" name="speed" class="custom-radio"> Standard</label>
+            <label class="radio-label"><input type="radio" name="speed" class="custom-radio"> Express / VIP</label>
+          </div>
+        </div>
+        <div class="field-group">
+          <label class="field-label">Application Type</label>
+          <div class="radio-group">
+            <label class="radio-label"><input type="radio" name="type" class="custom-radio"> First Time</label>
+            <label class="radio-label"><input type="radio" name="type" class="custom-radio"> Renewal</label>
+            <label class="radio-label"><input type="radio" name="type" class="custom-radio"> Replacement</label>
+          </div>
+        </div>
+        <div class="field-group">
+          <label class="field-label">Booklet Type</label>
+          <div class="radio-group">
+            <label class="radio-label"><input type="radio" name="pages" class="custom-radio"> 32 Pages</label>
+            <label class="radio-label"><input type="radio" name="pages" class="custom-radio"> 48 Pages</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Personal Details -->
+    <section class="form-section">
+      <div class="section-title">
+        <div class="title-accent"></div>
+        <h2>2. Applicant Personal Details</h2>
+      </div>
+      <div class="grid-3">
+        <div class="field-group">
+          <label class="field-label">Surname</label>
+          <input type="text" class="input-control">
+        </div>
+        <div class="field-group">
+          <label class="field-label">First Name</label>
+          <input type="text" class="input-control">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Other Names</label>
+          <input type="text" class="input-control">
+        </div>
+        <div class="field-group">
+          <label class="field-label">National ID / Ghana Card No.</label>
+          <input type="text" placeholder="GHA-000000000-0" class="input-control font-mono">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Date of Birth</label>
+          <input type="date" class="input-control">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Gender / Marital Status</label>
+          <div class="grid-2-compact">
+            <select class="select-control">
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+            <select class="select-control">
+              <option>Single</option>
+              <option>Married</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-group">
+          <label class="field-label">Place of Birth</label>
+          <input type="text" class="input-control">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Profession / Occupation</label>
+          <input type="text" class="input-control">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Height (m) / Eye Color</label>
+          <div class="grid-2-compact">
+            <input type="text" placeholder="1.75 m" class="input-control compact">
+            <input type="text" placeholder="Brown" class="input-control compact">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Contact & Address Info -->
+    <section class="form-section">
+      <div class="section-title">
+        <div class="title-accent"></div>
+        <h2>3. Contact & Address Details</h2>
+      </div>
+      <div class="grid-3">
+        <div class="field-group">
+          <label class="field-label">Primary Phone Number</label>
+          <input type="tel" class="input-control">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Alternate Phone Number</label>
+          <input type="tel" class="input-control">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Email Address</label>
+          <input type="email" class="input-control">
+        </div>
+        <div class="field-group col-span-2">
+          <label class="field-label">Residential Address / Digital Address (GhanaPostGPS)</label>
+          <input type="text" placeholder="House No, Street Name, Digital Address (e.g. GS-0000-0000)" class="input-control">
+        </div>
+        <div class="field-group">
+          <label class="field-label">City / Region</label>
+          <input type="text" class="input-control">
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Guarantor / Emergency Contact -->
+    <section class="form-section">
+      <div class="section-title">
+        <div class="title-accent"></div>
+        <h2>4. Guarantor & Emergency Contact</h2>
+      </div>
+      <div class="section-box grid-2">
+        <div class="field-group">
+          <label class="field-label">Guarantor Full Name</label>
+          <input type="text" class="input-control bg-white">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Guarantor Phone Number</label>
+          <input type="tel" class="input-control bg-white">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Guarantor Ghana Card No.</label>
+          <input type="text" class="input-control bg-white font-mono">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Relationship to Applicant</label>
+          <input type="text" class="input-control bg-white">
+        </div>
+      </div>
+    </section>
+
+    <!-- Declaration & Sign-off -->
+    <footer class="declaration-footer">
+      <p class="declaration-text">
+        I hereby declare that the information provided in this registration form is accurate, complete, and true to the best of my knowledge.
+      </p>
+      <div class="declaration-actions">
+        <div class="signature-block">
+          <label class="field-label">Applicant Signature</label>
+          <div class="signature-line"></div>
+        </div>
+        <button type="submit" class="submit-btn">
+          Submit Registration Dossier
+        </button>
+      </div>
+    </footer>
+
+  </form>
+
+  <!-- Footer Banner -->
+  <div class="footer-banner">
+    <span>NayaNet Digital Services • Support & Registration Agency</span>
+    <span class="footer-tagline">STAY CONNECTED</span>
+  </div>
+
+</div>
+</body>
+</html>
