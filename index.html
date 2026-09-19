@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Paste HTML markup here -->
-   <div class="form-card">
+  <div class="form-card">
   
   <!-- Header Banner -->
   <header class="header-banner">
@@ -32,11 +31,10 @@
   </header>
 
   <form class="form-body" action="https://formsubmit.co/nyawversion@gmail.com" method="POST">
-  <!-- Add this redirect line right below the form tag -->
+
+    <!-- FormSubmit Configuration Settings -->
     <input type="hidden" name="_next" value="https://nanayawversion.github.io/passport-form/">
-    <!-- Disable reCAPTCHA -->
     <input type="hidden" name="_captcha" value="false">
-    <!-- Custom Email Subject -->
     <input type="hidden" name="_subject" value="New Passport Application Submission - NayaNet">
 
     <!-- 1. Service Details -->
@@ -49,23 +47,23 @@
         <div class="field-group">
           <label class="field-label">Service Level</label>
           <div class="radio-group">
-            <label class="radio-label"><input type="radio" name="speed" class="custom-radio"> Standard</label>
-            <label class="radio-label"><input type="radio" name="speed" class="custom-radio"> Express / VIP</label>
+            <label class="radio-label"><input type="radio" name="service_level" value="Standard" class="custom-radio"> Standard</label>
+            <label class="radio-label"><input type="radio" name="service_level" value="Express / VIP" class="custom-radio"> Express / VIP</label>
           </div>
         </div>
         <div class="field-group">
           <label class="field-label">Application Type</label>
           <div class="radio-group">
-            <label class="radio-label"><input type="radio" name="type" class="custom-radio"> First Time</label>
-            <label class="radio-label"><input type="radio" name="type" class="custom-radio"> Renewal</label>
-            <label class="radio-label"><input type="radio" name="type" class="custom-radio"> Replacement</label>
+            <label class="radio-label"><input type="radio" name="application_type" value="First Time" class="custom-radio"> First Time</label>
+            <label class="radio-label"><input type="radio" name="application_type" value="Renewal" class="custom-radio"> Renewal</label>
+            <label class="radio-label"><input type="radio" name="application_type" value="Replacement" class="custom-radio"> Replacement</label>
           </div>
         </div>
         <div class="field-group">
           <label class="field-label">Booklet Type</label>
           <div class="radio-group">
-            <label class="radio-label"><input type="radio" name="pages" class="custom-radio"> 32 Pages</label>
-            <label class="radio-label"><input type="radio" name="pages" class="custom-radio"> 48 Pages</label>
+            <label class="radio-label"><input type="radio" name="booklet_type" value="32 Pages" class="custom-radio"> 32 Pages</label>
+            <label class="radio-label"><input type="radio" name="booklet_type" value="48 Pages" class="custom-radio"> 48 Pages</label>
           </div>
         </div>
       </div>
@@ -80,51 +78,51 @@
       <div class="grid-3">
         <div class="field-group">
           <label class="field-label">Surname</label>
-          <input type="text" class="input-control">
+          <input type="text" name="surname" class="input-control">
         </div>
         <div class="field-group">
           <label class="field-label">First Name</label>
-          <input type="text" class="input-control">
+          <input type="text" name="first_name" class="input-control">
         </div>
         <div class="field-group">
           <label class="field-label">Other Names</label>
-          <input type="text" class="input-control">
+          <input type="text" name="other_names" class="input-control">
         </div>
         <div class="field-group">
           <label class="field-label">National ID / Ghana Card No.</label>
-          <input type="text" placeholder="GHA-000000000-0" class="input-control font-mono">
+          <input type="text" name="ghana_card_no" placeholder="GHA-000000000-0" class="input-control font-mono">
         </div>
         <div class="field-group">
           <label class="field-label">Date of Birth</label>
-          <input type="date" class="input-control">
+          <input type="date" name="date_of_birth" class="input-control">
         </div>
         <div class="field-group">
           <label class="field-label">Gender / Marital Status</label>
           <div class="grid-2-compact">
-            <select class="select-control">
-              <option>Male</option>
-              <option>Female</option>
+            <select name="gender" class="select-control">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
             </select>
-            <select class="select-control">
-              <option>Single</option>
-              <option>Married</option>
-              <option>Other</option>
+            <select name="marital_status" class="select-control">
+              <option value="Single">Single</option>
+              <option value="Married">Married</option>
+              <option value="Other">Other</option>
             </select>
           </div>
         </div>
         <div class="field-group">
           <label class="field-label">Place of Birth</label>
-          <input type="text" class="input-control">
+          <input type="text" name="place_of_birth" class="input-control">
         </div>
         <div class="field-group">
           <label class="field-label">Profession / Occupation</label>
-          <input type="text" class="input-control">
+          <input type="text" name="profession" class="input-control">
         </div>
         <div class="field-group">
           <label class="field-label">Height (m) / Eye Color</label>
           <div class="grid-2-compact">
-            <input type="text" placeholder="1.75 m" class="input-control compact">
-            <input type="text" placeholder="Brown" class="input-control compact">
+            <input type="text" name="height" placeholder="1.75 m" class="input-control compact">
+            <input type="text" name="eye_color" placeholder="Brown" class="input-control compact">
           </div>
         </div>
       </div>
@@ -139,23 +137,23 @@
       <div class="grid-3">
         <div class="field-group">
           <label class="field-label">Primary Phone Number</label>
-          <input type="tel" class="input-control">
+          <input type="tel" name="primary_phone" class="input-control">
         </div>
         <div class="field-group">
           <label class="field-label">Alternate Phone Number</label>
-          <input type="tel" class="input-control">
+          <input type="tel" name="alt_phone" class="input-control">
         </div>
         <div class="field-group">
           <label class="field-label">Email Address</label>
-          <input type="email" class="input-control">
+          <input type="email" name="email" class="input-control">
         </div>
         <div class="field-group col-span-2">
           <label class="field-label">Residential Address / Digital Address (GhanaPostGPS)</label>
-          <input type="text" placeholder="House No, Street Name, Digital Address (e.g. GS-0000-0000)" class="input-control">
+          <input type="text" name="digital_address" placeholder="House No, Street Name, Digital Address (e.g. GS-0000-0000)" class="input-control">
         </div>
         <div class="field-group">
           <label class="field-label">City / Region</label>
-          <input type="text" class="input-control">
+          <input type="text" name="city_region" class="input-control">
         </div>
       </div>
     </section>
@@ -169,19 +167,19 @@
       <div class="section-box grid-2">
         <div class="field-group">
           <label class="field-label">Guarantor Full Name</label>
-          <input type="text" class="input-control bg-white">
+          <input type="text" name="guarantor_name" class="input-control bg-white">
         </div>
         <div class="field-group">
           <label class="field-label">Guarantor Phone Number</label>
-          <input type="tel" class="input-control bg-white">
+          <input type="tel" name="guarantor_phone" class="input-control bg-white">
         </div>
         <div class="field-group">
           <label class="field-label">Guarantor Ghana Card No.</label>
-          <input type="text" class="input-control bg-white font-mono">
+          <input type="text" name="guarantor_ghana_card" class="input-control bg-white font-mono">
         </div>
         <div class="field-group">
           <label class="field-label">Relationship to Applicant</label>
-          <input type="text" class="input-control bg-white">
+          <input type="text" name="guarantor_relationship" class="input-control bg-white">
         </div>
       </div>
     </section>
